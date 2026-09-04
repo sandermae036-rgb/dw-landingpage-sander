@@ -4,6 +4,84 @@
 //eksempel på at udskrive alle overskrifter i services i konsollen:
 // services.forEach(service => console.log(service.headline))
 
+// element adders--------------------------------------------------------------
+
+// section --------------------
+    function section (a, b) {
+        let sectionElement = document.createElement("section");
+
+        sectionElement.innerHTML = a
+
+        b.append(h1Element);
+    }
+
+// headlines ------------------
+    function h1 (a, b) {
+        let h1Element = document.createElement("h1");
+
+        h1Element.textContent = a
+
+        b.append(h1Element);
+    }
+
+    function h2 (a, b) {
+        let h2Element = document.createElement("h2");
+
+        h2Element.textContent = a
+
+        b.append(h2Element);
+    }
+
+    function h3 (a, b) {
+        let h3Element = document.createElement("h3");
+
+        h3Element.textContent = a
+
+        b.append(h3Element);
+    }
+    
+    // paragraphs -----------------
+    function p (a, b) {
+        let pElement = document.createElement("p");
+
+        pElement.textContent = a
+
+        b.append(pElement);
+    }
+
+    // img -----------------------
+    function img (a, b, c) {
+        let imgElement = document.createElement("img");
+
+        imgElement.setAttribute("src", a);
+
+        imgElement.setAttribute("alt", b);
+
+        c.append(imgElement);
+    }
+
+    // anchors ----------------------
+    function a (a, b, c) {
+        let aElement = document.createElement("a");
+
+        aElement.textContent = a
+
+        aElement.setAttribute("href", b);
+
+        c.append(aElement);
+    }
+
+    // button ------------------------
+    function btn (a, b) {
+
+        let buttonElement = document.createElement("button");
+
+        buttonElement.textContent = a
+
+        b.append(buttonElement);
+    }
+
+
 // vraiables ---------------------------------------------------------------
     // find section hero and display in console for better overview
     const sHero = document.querySelector(".hero");
@@ -11,11 +89,8 @@
     
 
         // make <img> with src and alt
-        
-
 
         // make <h1>
-
 
         // make dummy txt in a <p> element
 
