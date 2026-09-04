@@ -6,8 +6,9 @@
 
 // vraiables ---------------------------------------------------------------
     // find section hero and display in console for better overview
-    const hero = document.querySelector(".hero");
-    console.log(hero);
+    const sHero = document.querySelector(".hero");
+    console.log(sHero);
+    
 
         // make <img> with src and alt
         
@@ -27,8 +28,9 @@
 
 
     // find section services an display in console ---------------------------------
-    const services = document.querySelector(".services");
-    console.log(services);
+    const sServices = document.querySelector(".services");
+    console.log(sServices);
+    
 
         // make a for each that does this with every object in the array
 
@@ -48,8 +50,8 @@
 
 
     // find fascilities and display in console ------------------------------------
-    const facilities = document.querySelector(".facilities");
-    console.log(facilities);
+    const sFacilities = document.querySelector(".facilities");
+        console.log(sFacilities);
         
     
         // display h2
@@ -67,8 +69,8 @@
 
         
     // find sites and display in console ----------------------------------------------
-    const sites = document.querySelector(".sites");
-    console.log(sites);
+    const sSites = document.querySelector(".sites");
+console.log(sSites);
 
         // insert h2 with txt
 
@@ -94,8 +96,9 @@
                 // paragraph with city name
 
     // find advantages and display in console ------------------------------------------
-    const advantages = document.querySelector(".advantages");
-    console.log(advantages);
+    const sAdvantages = document.querySelector(".advantages");
+    console.log(sAdvantages);
+    
     
         // make a h2 with txt Our Advantages 
 
