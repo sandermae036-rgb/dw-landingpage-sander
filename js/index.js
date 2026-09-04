@@ -2,14 +2,15 @@
 
 
 //eksempel på at udskrive alle overskrifter i services i konsollen:
-services.forEach(service => console.log(service.headline))
+// services.forEach(service => console.log(service.headline))
 
 // vraiables ---------------------------------------------------------------
     // find section hero and display in console for better overview
-    const heroSection = document.querySelector(".hero");
-    console.log(heroSection)
+    const hero = document.querySelector(".hero");
+    console.log(hero);
 
         // make <img> with src and alt
+        
 
 
         // make <h1>
@@ -26,8 +27,8 @@ services.forEach(service => console.log(service.headline))
 
 
     // find section services an display in console ---------------------------------
-    const servicesSection = document.querySelector(".services");
-    console.log(servicesSection);
+    const services = document.querySelector(".services");
+    console.log(services);
 
         // make a for each that does this with every object in the array
 
@@ -47,8 +48,8 @@ services.forEach(service => console.log(service.headline))
 
 
     // find fascilities and display in console ------------------------------------
-    const facilitiesSection = document.querySelector(".facilities");
-    console.log(facilitiesSection);
+    const facilities = document.querySelector(".facilities");
+    console.log(facilities);
         
     
         // display h2
@@ -66,8 +67,8 @@ services.forEach(service => console.log(service.headline))
 
         
     // find sites and display in console ----------------------------------------------
-    const sitesSection = document.querySelector(".sites");
-    console.log(sitesSection);
+    const sites = document.querySelector(".sites");
+    console.log(sites);
 
         // insert h2 with txt
 
@@ -93,8 +94,8 @@ services.forEach(service => console.log(service.headline))
                 // paragraph with city name
 
     // find advantages and display in console ------------------------------------------
-    const advantagesSection = document.querySelector(".advantages");
-    console.log(advantagesSection);
+    const advantages = document.querySelector(".advantages");
+    console.log(advantages);
     
         // make a h2 with txt Our Advantages 
 
