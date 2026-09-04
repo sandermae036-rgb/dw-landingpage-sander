@@ -6,79 +6,79 @@
 
 // element adders--------------------------------------------------------------
 
-// section --------------------
-    function section (a, b) {
+// section ----------------------
+    function section (className) {
         let sectionElement = document.createElement("section");
 
-        sectionElement.innerHTML = a
-
-        b.append(h1Element);
+        sectionElement.classList.add(className);
+        
+        return sectionElement
     }
 
 // headlines ------------------
-    function h1 (a, b) {
+    function h1 (textContent) {
         let h1Element = document.createElement("h1");
 
-        h1Element.textContent = a
+        h1Element.textContent = textContent
 
-        b.append(h1Element);
+        return h1Element;
     }
 
-    function h2 (a, b) {
+    function h2 (textContent) {
         let h2Element = document.createElement("h2");
 
-        h2Element.textContent = a
+        h2Element.textContent = textContent
 
-        b.append(h2Element);
+        return h1Element;
     }
 
-    function h3 (a, b) {
+    function h3 (textContent) {
         let h3Element = document.createElement("h3");
 
-        h3Element.textContent = a
+        h3Element.textContent = textContent
 
-        b.append(h3Element);
+        return h3Element
     }
     
     // paragraphs -----------------
-    function p (a, b) {
+    function p (textContent) {
         let pElement = document.createElement("p");
 
-        pElement.textContent = a
+        pElement.textContent = textContent
 
-        b.append(pElement);
+        return pElement
     }
 
     // img -----------------------
-    function img (a, b, c) {
+    function img (src, alt) {
         let imgElement = document.createElement("img");
 
-        imgElement.setAttribute("src", a);
+        imgElement.setAttribute("src", src);
 
-        imgElement.setAttribute("alt", b);
+        imgElement.setAttribute("alt", alt);
 
-        c.append(imgElement);
+        return imgElement
     }
 
-    // anchors ----------------------
-    function a (a, b, c) {
+    // anchor tags ----------------------
+    function a (textContent, link) {
         let aElement = document.createElement("a");
 
-        aElement.textContent = a
+        aElement.textContent = textContent
 
-        aElement.setAttribute("href", b);
+        aElement.setAttribute("href", link);
 
-        c.append(aElement);
+        return aElement;
     }
 
     // button ------------------------
-    function btn (a, b) {
+    function btn (className) {
 
         let buttonElement = document.createElement("button");
 
-        buttonElement.textContent = a
+        buttonElement.classList.add(className);
 
-        b.append(buttonElement);
+        return buttonElement;
     }
 
 
@@ -90,16 +90,30 @@
 
         // make <img> with src and alt
 
-        // make <h1>
+        sHero.append(img (hero.image, "woman working"));
 
-        // make dummy txt in a <p> element
+        // make a section
+            sHero.append(section("herotxtbox"));
+            let herotxtbox = document.querySelector(".herotxtbox");
+
+            // make <h1>
+            herotxtbox.append(h1(hero.headline));
+
+            // make dummy txt in a <p> element
+            herotxtbox.append(p(hero.copy));
 
 
-        // make a button with
+            // make a button with
+            herotxtbox.append(btn("herobtn"));
+            let herobtn = document.querySelector(".herobtn");
+                // insert the icon <img>
+                herobtn.append(img(hero.icon, "netlify"));
 
-            // insert the icon <img>
+                // insert <p> with thext explore 
+                herobtn.append(p("Explore"));
 
-            // insert <p> with thext explore 
+
+
 
 
     // find section services an display in console ---------------------------------
@@ -109,7 +123,7 @@
 
         // make a for each that does this with every object in the array
 
-
+        
 
             // insert img
 
