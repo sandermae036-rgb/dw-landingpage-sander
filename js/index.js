@@ -7,6 +7,14 @@
 // element adders--------------------------------------------------------------
 
 // section ----------------------
+    function article (className) {
+        let articleElement = document.createElement("article");
+
+        articleElement.classList.add(className);
+        
+        return articleElement
+    }
+
     function section (className) {
         let sectionElement = document.createElement("section");
 
@@ -29,7 +37,7 @@
 
         h2Element.textContent = textContent
 
-        return h1Element;
+        return h2Element;
     }
 
     function h3 (textContent) {
@@ -122,20 +130,30 @@
     
 
         // make a for each that does this with every object in the array
-
+        services.forEach(function (service){
         
+        
+            // make a section
+            let serviceElement = article("serviceSection");
 
             // insert img
+            serviceElement.append(img(service.illustration, "icon"));
 
 
             // insert h3 with txt
+            serviceElement.append(h3(service.headline));
 
 
             //  insert paragraph with dummy txt
+            serviceElement.append(p(service.text));
 
 
             // insert <a> with txt
+            serviceElement.append(a (service.linktext, "#"))
 
+            sServices.append(serviceElement);
+        }); 
+        
 
 
     // find fascilities and display in console ------------------------------------
@@ -144,9 +162,18 @@
         
     
         // display h2
+        sFacilities.append(h2(facilities.headline));
         
         
         // make an array for each object in the array
+        Facilities.options.forEach(function (option){
+        
+        
+            // make a section
+            let facilitieElement = article("facilitieSection");
+
+            sFacilities.append(facilitieElement);
+        });
 
             // insert img
 
