@@ -132,7 +132,6 @@
         // make a for each that does this with every object in the array
         services.forEach(function (service){
         
-        
             // make a section
             let serviceElement = article("serviceSection");
 
@@ -165,23 +164,26 @@
         sFacilities.append(h2(facilities.headline));
         
         
-        // make an array for each object in the array
-        Facilities.options.forEach(function (option){
-        
-        
-            // make a section
-            let facilitieElement = article("facilitieSection");
+        // make an foreach facilite options
+        facilities.options.forEach(option => {
 
-            sFacilities.append(facilitieElement);
-        });
+            // make section
+            let faciliteElement = article("facilitieSection");
 
             // insert img
+            faciliteElement.append(img(option.icon, "icon"));
 
 
             // insert h3 with txt
+            faciliteElement.append(h3(option.headline));
 
 
             // insert paragraph with txt
+            faciliteElement.append(p(option.text));
+
+
+            sFacilities.append(faciliteElement);
+        });
 
         
     // find sites and display in console ----------------------------------------------
