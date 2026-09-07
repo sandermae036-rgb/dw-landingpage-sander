@@ -104,7 +104,7 @@ let dataFooter = {
         {
             utility: [
                 {
-                    headline: "Discover the Network",
+                    text: "Discover the Network",
                 },
                 {
                     text: "Where to shop",
@@ -123,7 +123,7 @@ let dataFooter = {
         {
             utility: [
                 {
-                    headline: "Become a Manager",
+                    text: "Become a Manager",
                 },
                 {
                     text: "Join your Pairing",
@@ -139,7 +139,7 @@ let dataFooter = {
         {
             utility: [
                 {
-                    headline: "Assistance",
+                    text: "Assistance",
                 },
                 {
                     text: "Support Center",
@@ -157,22 +157,22 @@ let dataFooter = {
         },
     ],
 
-            rights: "EazyCamper. All rights reserved. ",
-            navigation: [
-                {
-                    about: "About",
-                },
-                {
-                    SiteMap: "Site map",
-                },
-                {
-                    Terms: "Terms",
-                },
-                {
-                    PrivacyPolicy: "Privacy Policy",
-                },
-                {
-                    Teams: "teams",
-                },
-            ]
-        }
+    rights: "EazyCamper. All rights reserved. ",
+    navigation: [
+        {
+            text: "About",
+        },
+        {
+            text: "Site map",
+        },
+        {
+            text: "Terms",
+        },
+        {
+            text: "Privacy Policy",
+        },
+        {
+            text: "teams",
+        },
+    ]
+}

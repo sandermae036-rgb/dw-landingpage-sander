@@ -8,15 +8,15 @@
 
 // ul and li elements ------------------------
 
-function ul (className) {
-        let ulElement = document.createElement("ul");
+function ul(className) {
+    let ulElement = document.createElement("ul");
 
     ulElement.classList.add(className);
 
     return ulElement
 }
 
-function li () {
+function li() {
     let liElement = document.createElement("li");
 
     return liElement
@@ -291,40 +291,55 @@ let footer = document.querySelector(".footer")
 console.log(footer);
 
 // insert paragraph with text
-footer.append(p(dataFooter.text)); 
+footer.append(p(dataFooter.text));
 
 // insert h2 with headline
 footer.append(h2(dataFooter.headline));
 
 // make a foreach utilityOption object inside the ul
-dataFooter.utilityOptions.forEach(function (utilitySetting){
+dataFooter.utilityOptions.forEach(function (utilitySetting) {
 
     // insert ul
     let footerMainUl = ul("footerMainUl");
 
     // make a forEach object inside the utility
-    utilitySetting.utility.forEach(function (utilitys){
+    utilitySetting.utility.forEach(function (utilitys) {
 
-    
+
         // make a li
         let listItm = li();
-            
-            // make a paragraph with headline
-            listItm.append(p(utilitys.text));
+
+        // make a paragraph with headline
+        listItm.append(p(utilitys.text));
 
         footerMainUl.append(listItm);
 
-        });
+    });
 
-        footer.append(footerMainUl);
+    footer.append(footerMainUl);
 });
 
+
 // make a new section
+let footerUnderSection = section("footerUnderSection");
 
-    // make a paragraph wiith rights 
+// make a paragraph wiith rights
+footerUnderSection.append(p(dataFooter.rights));
 
-    // make a ul element 
+// make a ul element 
+let footerScndUl = ul("scndUl");
 
-        // it make four li elements 
+dataFooter.navigation.forEach(function (nav) {
 
-            // inside the li make a paragraph with the 
+    // make li elements
+    let listItm2 = li();
+
+    // make a paragraph with the
+    listItm2.append(nav.text);
+
+    footerScndUl.append(listItm2);
+});
+
+    footerUnderSection.append(footerScndUl);
+
+footer.append(footerUnderSection);
