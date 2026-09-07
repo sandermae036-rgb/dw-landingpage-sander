@@ -191,27 +191,52 @@
 console.log(sSites);
 
         // insert h2 with txt
+        sSites.append(h2(sites.headline));
 
 
         // insert paragraph with txt
+        sSites.append(p(sites.text));
 
 
         // insert button
+        let sSitesBtn = btn("sitesMainBtn"); 
 
             // insert icon
+            sSitesBtn.append(img(sites.btnicon, "btn icon"));
 
             // insert paragraph with txt
+            sSitesBtn.append(p("button here"));
+
+        sSites.append(sSitesBtn);
 
 
-        // insert section and display with log for better view
+        // insert section
+        let sSiteSection = section("siteSection");
 
-            // make foreach object in the array = places
+            // make foreach object in the array
+            sites.places.forEach(function (place){
+
+                // make article
+                let sSitesArticle = article("siteArticle");
 
                 // insert img
+                sSitesArticle.append(img(place.img, place.name));
 
-                // insert paragraph with name as txt
+                // insert h3 with name as txt
+                sSitesArticle.append(h3(place.name));
 
                 // paragraph with city name
+                sSitesArticle.append(p(place.city));
+        
+
+            sSiteSection.append(sSitesArticle);
+
+            });
+        
+        sSites.append(sSiteSection);
+
+
+
 
     // find advantages and display in console ------------------------------------------
     const sAdvantages = document.querySelector(".advantages");
@@ -227,13 +252,3 @@ console.log(sSites);
             // insert h3 with headline
 
             // insert paragraph with text 
-
-
-
-
-
-
-
-
-
-// functions ----------------------------------------------------------
