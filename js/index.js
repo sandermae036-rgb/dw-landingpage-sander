@@ -6,7 +6,26 @@
 
 // element adders--------------------------------------------------------------
 
-// section ----------------------
+// ul and li elements ------------------------
+
+function ul (className) {
+        let ulElement = document.createElement("ul");
+
+    ulElement.classList.add(className);
+
+    return ulElement
+}
+
+function li (className) {
+    let liElement = document.createElement("li");
+
+    liElement.classList.add(className);
+
+    return liElement
+}
+
+
+// section and articles ----------------------
 function article(className) {
     let articleElement = document.createElement("article");
 
@@ -267,3 +286,36 @@ advantages.forEach(function (advantage) {
 });
 
 sAdvantages.append(advHeadSection);
+
+
+// find footer with .log and display in dom
+
+// insert paragraph with text 
+
+// insert h2 with headline
+
+// insert section
+
+// make a foreach inside the section and for each element in utility options
+
+    //  make a h3 with headline
+
+    // make paragraph with li1
+
+    // make paragraph with li2
+
+    // make paragraph with li3
+
+    // make paragraph with li4
+
+
+
+// make a new section
+
+    // make a paragraph wiith rights 
+
+    // make a ul element 
+
+        // it make four li elements 
+
+            // inside the li make a paragraph with the 

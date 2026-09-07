@@ -100,37 +100,75 @@ let advantages = [
 let footer = {
     text: "Easy Camper",
     headline: "When Passion Meets Comfort.",
-    utilityOption: [
+    utilityOptions: [
         {
-            headline: "Discover the Network",
-            li1: "Where to shop",
-            li2: "Tour Guided",
-            li3: "Our Tours",
-            li4: "About Us",
-        
-        },
-        {
-            headline: "Become a Manager",
-            li1: "Join your Pairing",
-            li2: "Offer your Service",
-            li3: "Are you a guide?",
-        },
-        {
-            headline: "Assistance",
-            li1: "Support Center",
-            li2: "FAQs",
-            li3: "Cancallation Options",
-            li4: "Reliablity and Sequrity",
-        },
+            utility: [
+                {
+                    headline: "Discover the Network",
+                },
+                {
+                    text: "Where to shop",
+                },
+                {
+                    text: "Tour Guided",
+                },
+                {
+                    text: "Our Tours",
+                },
+                {
+                    text: "About Us",
+                },
+            ],
+            utility: [
+                {
+                    headline: "Become a Manager",
+                },
+                {
+                    text: "Join your Pairing",
+                },
+                {
+                    text: "Offer your Service",
+                },
+                {
+                    text: "Are you a guide?",
+                },
+            ],
+            utility: [
+                {
+                    headline: "Assistance",
+                },
+                {
+                    text: "Support Center",
+                },
+                {
+                    text: "FAQs",
+                },
+                {
+                    text: "Cancallation Options",
+                },
+                {
+                    text: "Reliablity and Sequrity",
+                },
+            ],
+        }
     ],
-    rights: "EazyCamper. All rights reserved. ",
-    navigation: [
-        {
-            about: "About",
-            SiteMap: "Site map",
-            Terms: "Terms",
-            PrivacyPolicy: "Privacy Policy",
-            Teams: "teams",
-        },
-    ]
-}
+
+            rights: "EazyCamper. All rights reserved. ",
+            navigation: [
+                {
+                    about: "About",
+                },
+                {
+                    SiteMap: "Site map",
+                },
+                {
+                    Terms: "Terms",
+                },
+                {
+                    PrivacyPolicy: "Privacy Policy",
+                },
+                {
+                    Teams: "teams",
+                },
+            ]
+        }
