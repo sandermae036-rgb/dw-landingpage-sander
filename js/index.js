@@ -290,15 +290,19 @@ advantages.forEach(function (advantage) {
 sAdvantages.append(advHeadSection);
 
 
-// find footer with .log and display in dom
+
+// find footer with .log and display in dom -------------------------------------------------------------
 let footer = document.querySelector(".footer")
 console.log(footer);
 
+let footerfirstSection = section("firstSection");
 // insert paragraph with text
-footer.append(p(dataFooter.text));
+footerfirstSection.append(p(dataFooter.text));
 
 // insert h2 with headline
-footer.append(h2(dataFooter.headline));
+footerfirstSection.append(h2(dataFooter.headline));
+
+footer.append(footerfirstSection)
 
 // make a foreach utilityOption object inside the ul
 dataFooter.utilityOptions.forEach(function (utilitySetting) {
