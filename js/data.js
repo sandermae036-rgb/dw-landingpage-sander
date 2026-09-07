@@ -96,3 +96,9 @@ let advantages = [
 ]
 
 // Opret dit dataobjekt til footerens indhold herunder
+
+let footer = {
+    text: "Easy Camper",
+    headline: "When Passion Meets Comfort.",
+
+};
