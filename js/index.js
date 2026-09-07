@@ -207,31 +207,35 @@ facilities.options.forEach(option => {
 const sSites = document.querySelector(".sites");
 console.log(sSites);
 
-// insert h2 with txt
-sSites.append(h2(sites.headline));
-
-
-// insert paragraph with txt
-sSites.append(p(sites.text));
-
-
-// insert button
-let sSitesBtn = btn("sitesMainBtn");
-
-// insert icon
-sSitesBtn.append(img(sites.btnicon, "btn icon"));
-
-// insert paragraph with txt
-sSitesBtn.append(p("button here"));
-
-sSites.append(sSitesBtn);
-
-
 // insert section
+    let sitesFirstSection = section("siteFirstSection");
+
+    // insert h2 with txt
+    sitesFirstSection.append(h2(sites.headline));
+
+
+    // insert paragraph with txt
+    sitesFirstSection.append(p(sites.text));
+
+
+    // insert button
+    let sSitesBtn = btn("sitesMainBtn");
+
+    // insert icon
+    sSitesBtn.append(img(sites.btnicon, "btn icon"));
+
+    // insert paragraph with txt
+    sSitesBtn.append(p("button here"));
+
+    sitesFirstSection.append(sSitesBtn);
+
+sSites.append(sitesFirstSection);
+
+    // insert section
 let sSiteSection = section("siteSection");
 
 // make foreach object in the array
-sites.places.forEach(function (place) {
+    sites.places.forEach(function (place) {
 
     // make article
     let sSitesArticle = article("siteArticle");
@@ -248,7 +252,7 @@ sites.places.forEach(function (place) {
 
     sSiteSection.append(sSitesArticle);
 
-});
+    });
 
 sSites.append(sSiteSection);
 
