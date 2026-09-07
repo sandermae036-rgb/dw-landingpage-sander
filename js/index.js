@@ -16,10 +16,8 @@ function ul (className) {
     return ulElement
 }
 
-function li (className) {
+function li () {
     let liElement = document.createElement("li");
-
-    liElement.classList.add(className);
 
     return liElement
 }
@@ -289,26 +287,37 @@ sAdvantages.append(advHeadSection);
 
 
 // find footer with .log and display in dom
+let footer = document.querySelector(".footer")
+console.log(footer);
 
-// insert paragraph with text 
+// insert paragraph with text
+footer.append(p(dataFooter.text)); 
 
 // insert h2 with headline
+footer.append(h2(dataFooter.headline));
 
-// insert section
+// make a foreach utilityOption object inside the ul
+dataFooter.utilityOptions.forEach(function (utilitySetting){
 
-// make a foreach inside the section and for each element in utility options
+    // insert ul
+    let footerMainUl = ul("footerMainUl");
 
-    //  make a h3 with headline
+    // make a forEach object inside the utility
+    utilitySetting.utility.forEach(function (utilitys){
 
-    // make paragraph with li1
+    
+        // make a li
+        let listItm = li();
+            
+            // make a paragraph with headline
+            listItm.append(p(utilitys.text));
 
-    // make paragraph with li2
+        footerMainUl.append(listItm);
 
-    // make paragraph with li3
+        });
 
-    // make paragraph with li4
-
-
+        footer.append(footerMainUl);
+});
 
 // make a new section
 

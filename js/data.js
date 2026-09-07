@@ -97,7 +97,7 @@ let advantages = [
 
 // Opret dit dataobjekt til footerens indhold herunder
 
-let footer = {
+let dataFooter = {
     text: "Easy Camper",
     headline: "When Passion Meets Comfort.",
     utilityOptions: [
@@ -119,6 +119,8 @@ let footer = {
                     text: "About Us",
                 },
             ],
+        },
+        {
             utility: [
                 {
                     headline: "Become a Manager",
@@ -133,6 +135,8 @@ let footer = {
                     text: "Are you a guide?",
                 },
             ],
+        },
+        {
             utility: [
                 {
                     headline: "Assistance",
@@ -150,7 +154,7 @@ let footer = {
                     text: "Reliablity and Sequrity",
                 },
             ],
-        }
+        },
     ],
 
             rights: "EazyCamper. All rights reserved. ",
